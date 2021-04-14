@@ -1,4 +1,6 @@
 
+import Studerende.Studerende;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -19,6 +21,8 @@ public class Main {
       System.out.println("Indtast karakter nr. " + i);
 
       eksamensbevis.add(scan.nextInt());
+
+      Studerende studerende = new Studerende(name, karaktererArray, eksamensbevis);
     }
   }
 }
