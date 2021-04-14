@@ -17,12 +17,14 @@ public class Main {
 
     String name = scan.nextLine();
 
-    for (int i = 1; i < karaktererArray.length; i++) {
+    for (int i = 1; i < karaktererArray.length+1; i++) {
       System.out.println("Indtast karakter nr. " + i);
 
       eksamensbevis.add(scan.nextInt());
 
       Studerende studerende = new Studerende(name, karaktererArray, eksamensbevis);
     }
+
+    System.out.println("Karakterer: " + eksamensbevis);
   }
 }
