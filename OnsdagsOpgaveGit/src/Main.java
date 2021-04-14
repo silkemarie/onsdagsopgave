@@ -14,5 +14,11 @@ public class Main {
     System.out.println("Indtast den studerendes navn: "); //kan vi også få det med i ArrayListen?
 
     String name = scan.nextLine();
+
+    for (int i = 1; i < karaktererArray.length; i++) {
+      System.out.println("Indtast karakter nr. " + i);
+
+      eksamensbevis.add(scan.nextInt());
+    }
   }
 }
