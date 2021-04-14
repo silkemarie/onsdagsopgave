@@ -1,28 +1,21 @@
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-  
-  public static void main(String[] args) {
-    System.out.println("Hello there");
-    modtagKarakterer(new int[]{});
 
-  }
+      public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> eksamensbevis = new ArrayList<>(); //ArrayListe til at have liste af eksamensbeviser i
+        int[] karaktererArray = new int[7];
 
-  public static int[] modtagKarakterer(int[] karakterer) {
-    Scanner scan = new Scanner(System.in);
-    System.out.println("Indtast den studerendes karakterer: ");
+        System.out.println("Velkommen til Kristian og Silkes karakter-program.");
+        System.out.println("Indtast den studerendes navn: "); //kan vi også få det med i ArrayListen?
 
-    for (int i = 1; i < karakterer.length+1; i++) {
-      System.out.println("Indtast karakter nr. " + i );
-      int karakter1 = scan.nextInt();
-      scan.nextLine(); //scanner"bug"
-      int karakter2 = scan.nextInt();
+        String name = scan.nextLine();
 
-      //if (! equals 3, 4,4, )
-
+      }
     }
 
-    return karakterer;
-  }
-}
+
