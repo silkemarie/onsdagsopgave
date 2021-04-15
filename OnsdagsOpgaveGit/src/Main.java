@@ -9,7 +9,7 @@ public class Main {
 
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
-    ArrayList<Integer> eksamensbevis = new ArrayList<>(); //ArrayListe til at have liste af eksamensbeviser i
+
     int[] karaktererArray = new int[7];
 
     System.out.println("Velkommen til Kristian og Silkes karakter-program.");
@@ -20,11 +20,10 @@ public class Main {
     for (int i = 1; i < karaktererArray.length+1; i++) {
       System.out.println("Indtast karakter nr. " + i);
 
-      eksamensbevis.add(scan.nextInt());
+      karaktererArray[i] = scan.nextInt();
 
-      Studerende studerende = new Studerende(name, karaktererArray, eksamensbevis);
     }
-
-    System.out.println("Karakterer: " + eksamensbevis);
+    Studerende studerende = new Studerende(name, karaktererArray);
+    System.out.println(studerende);
   }
 }

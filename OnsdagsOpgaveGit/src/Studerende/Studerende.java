@@ -1,11 +1,22 @@
 package Studerende;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Studerende {
-  private final String name;
+  private String name;
+  private int[] karakterer;
 
-  public Studerende(String name, int[] karaktererArray, ArrayList<Integer> eksamensbevis) {
+  public Studerende(String name, int[] karakterer) {
     this.name = name;
+    this.karakterer = karakterer;
+  }
+
+  @Override
+  public String toString() {
+    return "Studerende{" +
+        "name='" + name + '\'' +
+        ", karakterer=" + Arrays.toString(karakterer) +
+        '}';
   }
 }
