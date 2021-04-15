@@ -8,6 +8,16 @@ class StuderendeTest {
 
   @Test
   void testToString() {
-    assertEquals(1, 1);
+    // Arrange
+    int[] karakterer = {10, 12, 10, 10, 7, 7, 12};
+    Studerende studerende = new Studerende("Kristian", karakterer);
+
+    // Act
+    String actual = studerende.getNavn();
+    String expected = "Kristian";
+
+    //Assert
+    //assertEquals(expected, actual);
+    assertThrows(IllegalArgumentException.class, () -> studerende.getNavn(), actual);
   }
 }

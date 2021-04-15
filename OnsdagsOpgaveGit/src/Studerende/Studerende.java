@@ -11,6 +11,14 @@ public class Studerende {
     this.karakterer = karakterer;
   }
 
+  public String getNavn() throws IllegalArgumentException {
+    return navn;
+  }
+
+  public void setNavn(String navn) {
+    this.navn = navn;
+  }
+
   @Override
   public String toString() {
     return "Studerende{" +
