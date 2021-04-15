@@ -15,7 +15,7 @@ public class Main {
     System.out.println("Velkommen til Kristian og Silkes karakter-program.");
     System.out.println("Indtast den studerendes navn: "); //kan vi også få det med i ArrayListen?
 
-    String name = scan.nextLine();
+    String navn = scan.nextLine();
 
     for (int i = 1; i < karaktererArray.length+1; i++) {
       System.out.println("Indtast karakter nr. " + i);
@@ -23,7 +23,7 @@ public class Main {
       karaktererArray[i] = scan.nextInt();
 
     }
-    Studerende studerende = new Studerende(name, karaktererArray);
+    Studerende studerende = new Studerende(navn, karaktererArray);
     System.out.println(studerende);
   }
 }
