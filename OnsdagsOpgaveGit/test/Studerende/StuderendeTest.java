@@ -10,7 +10,7 @@ class StuderendeTest {
   void testToString() {
     // Arrange
     int[] karakterer = {10, 12, 10, 10, 7, 7, 12};
-    Studerende studerende = new Studerende("Kristian", karakterer);
+    Studerende studerende = new Studerende("Kristian", 7);
 
     // Act
     String actual = studerende.getNavn();

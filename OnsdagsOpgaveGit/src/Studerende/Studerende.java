@@ -6,9 +6,9 @@ public class Studerende {
   private String navn;
   private int[] karakterer;
 
-  public Studerende(String navn, int[] karakterer) {
+  public Studerende(String navn, int karakterer) {
     this.navn = navn;
-    this.karakterer = karakterer;
+    this.karakterer = new int[karakterer];
   }
 
   public String getNavn() throws IllegalArgumentException {
@@ -18,7 +18,11 @@ public class Studerende {
   @Override
   public String toString() {
     return "Studerende: "
-        + "Navn - " + navn + '\''
+        + "Navn - " + navn
         + ", karakterer - " + Arrays.toString(karakterer);
+  }
+
+  public void tilføjKarakterer(int[] karakterer) {
+    this.karakterer = karakterer;
   }
 }
