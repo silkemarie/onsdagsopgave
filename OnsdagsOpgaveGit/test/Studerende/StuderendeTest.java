@@ -17,7 +17,6 @@ class StuderendeTest {
     String expected = "Kristian";
 
     //Assert
-    //assertEquals(expected, actual);
-    assertThrows(IllegalArgumentException.class, () -> studerende.getNavn(), actual);
+    assertEquals(expected, actual);
   }
 }
