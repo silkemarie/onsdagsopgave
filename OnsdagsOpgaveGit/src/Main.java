@@ -13,18 +13,18 @@ public class Main {
     int[] karaktererArray = new int[7];
 
     System.out.println("Velkommen til Kristian og Silkes karakter-program.");
-    System.out.println("Indtast den studerendes navn: "); //kan vi også få det med i ArrayListen?
+    System.out.println("Indtast den studerendes navn: ");
 
     String navn = scan.nextLine();
 
     for (int i = 0; i < karaktererArray.length; i++) {
       System.out.println("Indtast karakter nr. " + (i+1));
 
-      karaktererArray[i] = validerKarakter(scan.nextInt());
+      karaktererArray[i] = validerKarakter(scan.nextInt());  // Validere karakterer indne den bliver sat i array'et
 
     }
     Studerende studerende = new Studerende(navn, karaktererArray);
-    System.out.println(studerende);
+    udskrivStuderende(studerende);
   }
 
   public static int validerKarakter(int karakter) {
@@ -33,5 +33,9 @@ public class Main {
       throw new IllegalArgumentException("Indtast venligst gyldige karakterer.");
     }
     return karakter;
+  }
+
+  public static void udskrivStuderende(Studerende studerende) {
+    System.out.println(studerende);
   }
 }

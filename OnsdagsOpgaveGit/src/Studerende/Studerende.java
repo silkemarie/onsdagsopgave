@@ -15,15 +15,10 @@ public class Studerende {
     return navn;
   }
 
-  public void setNavn(String navn) {
-    this.navn = navn;
-  }
-
   @Override
   public String toString() {
-    return "Studerende{" +
-        "navn='" + navn + '\'' +
-        ", karakterer=" + Arrays.toString(karakterer) +
-        '}';
+    return "Studerende: "
+        + "Navn - " + navn + '\''
+        + ", karakterer - " + Arrays.toString(karakterer);
   }
 }
